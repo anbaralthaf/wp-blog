@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+/* Animation for Section Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
